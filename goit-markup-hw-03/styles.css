@@ -23,21 +23,19 @@ body {
   padding: 0 15px;
 }
 
-header {
+.all-nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
   width: 100%;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
   border-bottom: 1px solid #ececec;
 }
-
 .container-logo {
   text-decoration: none;
-  margin: 24px 0 25px 0;
   padding-top: 24px;
   padding-bottom: 25px;
-  padding-left: 215px;
 }
 
 ul {
@@ -96,7 +94,7 @@ a {
   max-width: 40%;
   width: 254px;
   justify-content: space-between;
-  gap: 40px;
+  gap: 30px;
   padding: 10px;
   line-height: 0.875;
   letter-spacing: 0.02em;
@@ -156,14 +154,13 @@ a {
   gap: 40px;
 }
 
-.wrapper {
+.main-tittle {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  width: 100%;
-  max-width: 1200px;
-  height: 600px;
+  align-items: center;
+  padding: 200px 0;
+}
+.wrapper {
   background-color: var(--background-grey);
 }
 
@@ -193,6 +190,8 @@ h1 {
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.06em;
+  display: block;
+  margin: auto;
 }
 
 .wrapper-2 {
@@ -202,10 +201,12 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   justify-content: space-between;
-  gap: calc(0 15px / 3);
   padding-left: 0%;
 }
 
+.wrapper-2 > li {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
 .link-mail:hover,
 .link-mail:focus {
   color: var(--blue);
@@ -217,9 +218,19 @@ h1 {
 
 .buttons {
   display: flex;
-  justify-content: center;
-  background-color: var(--second-white);
+  flex-direction: row;
+  align-items: center;
   color: var(--black);
+  max-width: 572px;
+  width: 100%;
+  gap: 8px;
+  margin: auto;
+  margin-bottom: 34px;
+  margin-top: 131px;
+}
+
+.picture {
+  display: block;
 }
 
 .container-lorem {
@@ -237,7 +248,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .section-team {
@@ -248,8 +259,6 @@ h1 {
   width: 100%;
   background-color: var(--second-white);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 h2 {
@@ -284,21 +293,23 @@ h2 {
 .team-list {
   display: flex;
   justify-content: space-around;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .boxes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
-.big-box {
-  width: 1170px;
-  height: 1360px;
-  left: 215px;
-  top: 260px;
-  display: flex;
-  flex-wrap: wrap-reverse;
+
+.item {
+  gap: calc(1110px / 3);
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 30px;
+  margin-left: 0;
+  margin-right: 0;
 }
+
 .footer-down {
   background-color: var(--background-grey);
   font-style: normal;
@@ -306,17 +317,10 @@ h2 {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.6);
   display: flex;
-  align-items: left;
 }
-.dark-side {
-  max-width: 1200px;
-  width: 100%;
-  /* left: 0px;
-  top: 59px; */
-  background-color: var(--background-grey);
-}
+
 .address {
   color: var(--white);
   color: rgba(255, 255, 255, 0.6);
@@ -343,16 +347,21 @@ h2 {
 .letter-style1 {
   text-decoration: none;
   line-height: 1.71;
+  margin-bottom: 9px;
 }
 .letter-style2 {
   line-height: 1.71;
   font-style: normal;
-  padding-top: 9px;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 9px;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .color-mail {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .color-mail:hover {
@@ -362,7 +371,6 @@ h2 {
 .letter-style3 {
   text-decoration: none;
   font-style: normal;
-  padding-top: 9px;
   line-height: 1.71;
   padding-bottom: 20px;
 }
