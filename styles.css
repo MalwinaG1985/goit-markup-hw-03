@@ -185,6 +185,7 @@ a {
 .wrapper {
   background-color: var(--background-grey);
   margin-top: 37px;
+  display: flex;
 }
 
 h1 {
@@ -213,9 +214,17 @@ h1 {
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.06em;
-  display: block;
   margin: auto;
+ display: flex;
 }
+
+.button-one{
+justify-content: center;
+align-items: center;
+padding: 0;
+}
+
+
 
 .wrapper-2 {
   width: 1170px;
@@ -263,11 +272,23 @@ h1 {
   border-radius: 4px;
 }
 
+.button1:hover,
+.button1:focus {
+  color:#eeeeee;
+background-color: var(--blue);
+}
+
 .button2 {
   width: 93px;
   height: 38px;
   border: none;
   border-radius: 4px;
+}
+
+.button2:hover,
+.button2:focus {
+  color:#eeeeee;
+background-color: var(--blue);
 }
 
 .button3 {
@@ -277,6 +298,12 @@ h1 {
   border: none;
 }
 
+.button3:hover,
+.button3:focus {
+  color:#eeeeee;
+background-color: var(--blue);
+}
+
 .button4 {
   width: 91px;
   height: 38px;
@@ -284,11 +311,23 @@ h1 {
   border: none;
 }
 
+.button4:hover,
+.button4:focus {
+  color:#eeeeee;
+background-color: var(--blue);
+}
+
 .button5 {
   width: 121px;
   height: 38px;
   border-radius: 4px;
   border: none;
+}
+
+.button5:hover,
+.button5:focus {
+  color:#eeeeee;
+background-color: var(--blue);
 }
 
 .section {
